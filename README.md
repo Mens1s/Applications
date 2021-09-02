@@ -1,4 +1,4 @@
-# python_applications
+# Python Applications
 <h2>1. ATM PROJECT </h2>
 <p> In this project, I use some modules such as request, time. My aim is to achieve <span style = "color : red">live currency</span> data and use them to translate. (TRY to USD)
 <h2>2. Calculator Project </h2>
