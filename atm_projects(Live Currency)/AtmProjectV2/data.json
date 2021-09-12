@@ -1,0 +1,9 @@
+{
+    "123456789":{
+        "password":"101010",
+        "name":"ahmet",
+        "surname":"yigit",
+        "tr_balance":10000,
+        "usd_balance":1000
+    }
+}
