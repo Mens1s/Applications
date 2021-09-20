@@ -34,8 +34,12 @@ class App(QtWidgets.QMainWindow):
         self.ui2.login.clicked.connect(self.control)
         
     def control(self):
-        self.id_customer = self.ui2.id.text()
-        self.password_customer = self.ui2.password.text()
+        if self.ui2.password.text() is None or self.ui2.id.text() is None:
+            self.password_customer = "1"
+            self.id_customer = "1"
+        else:
+            self.password_customer = str(self.ui2.password.text())
+            self.id_customer = str(self.ui2.id.text())
         self.result =  login(self.id_customer,self.password_customer)
         if self.result[0] == 1:
             self.ui3 = Ui3_MainWindow()
