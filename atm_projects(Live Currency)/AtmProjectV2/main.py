@@ -8,6 +8,7 @@ import currency
 import json
 from login import login
 from login import controlUser
+import time
 
 class App(QtWidgets.QMainWindow):
     def __init__(self):
@@ -78,6 +79,11 @@ class App(QtWidgets.QMainWindow):
                 self.ui3.okey.setEnabled(False) #I did it because every clicking  will take money from balance.
 
                 self.ui3.result.setText("Your order succesfully proccesed!")
+
+                while True:
+                    QtWidgets.QMessageBox.about(self,"Exit",f"Your order succesfully proccesed.\nYou will be log out.\n       Press okey button.")
+                    sys.exit()
+
             else:
                 self.ui3.result.setText("Your Password is wrong!")
         else:
@@ -112,7 +118,11 @@ class App(QtWidgets.QMainWindow):
                 self.ui3.okey.setEnabled(False) 
 
                 self.ui3.result.setText("Your order succesfully proccesed.")
+                while True:
+                    QtWidgets.QMessageBox.about(self,"Exit",f"Your order succesfully proccesed.\nYou will be log out.\n        Press okey button.")
+                    sys.exit()
             else:
+
                 self.ui3.result.setText("Taker id is wrong!")
         else:
             self.ui3.result.setText("You do not have enough money!")
@@ -134,6 +144,9 @@ class App(QtWidgets.QMainWindow):
         
             self.ui3.result.setText("Your wish was sent to manager.")
             self.ui3.okey.setEnabled(False)
+            while True:
+                    QtWidgets.QMessageBox.about(self,"Exit",f"Your order succesfully proccesed.\nYou will be log out.\n       Press okey button.")
+                    sys.exit()
 
         else:
             self.ui3.result.setText("Your password is wrong!")
