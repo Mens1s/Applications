@@ -6,11 +6,11 @@
 <p> In this project I aimed to use live currency and datasets.
 I use:
 
-requests
-pyqt5
-sys
-time
-datetime
+<p>requests</p>
+<p>pyqt5</p>
+<p>sys</p>
+<p>time</p>
+<p>datetime</p>
 
 modules.<p>
 <h2>2. Calculator Project </h2>
