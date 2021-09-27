@@ -16,3 +16,6 @@ modules.<p>
 <h2>2. Calculator Project </h2>
 <p> I create my first GUI with PyQt5 in this project. I learned most of things and this project is my start path to create something</p>
 <img src="https://www.linkpicture.com/q/first_2.png" widht="120" height="120"> 
+
+<h2>3. Typing Speed Project </h2>
+<p> I set random text and I want to write them in the input area. Whem you end your writing, you can see anmounts of correct word and time.
